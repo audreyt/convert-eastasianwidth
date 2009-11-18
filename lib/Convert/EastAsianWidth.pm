@@ -4,7 +4,7 @@ use 5.008;
 use strict;
 use Exporter;
 
-our $VERSION = '1.00';
+our $VERSION = '1.01';
 our @ISA = 'Exporter';
 our @EXPORT = qw(to_fullwidth to_halfwidth);
 
@@ -46,14 +46,16 @@ sub to_halfwidth {
 
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
-Convert::EastAsianWidth - Convert between full- and half-width characters
+Convert::EastAsianWidth - Convert between full/half-width ASCII characters
 
 =head1 VERSION
 
-This document describes version 1.00 of Convert:EastAsianWidth,
-released November 17, 2009.
+This document describes version 1.01 of Convert:EastAsianWidth,
+released November 18, 2009.
 
 =head1 SYNOPSIS
 
@@ -67,8 +69,8 @@ released November 17, 2009.
 
 =head1 DESCRIPTION
 
-This module efficiently convert between full- and half-width ASCII and
-punctuation characters.
+This module efficiently convert between full- and half-width ASCII
+characters, including alphanumerics and punctuations.
 
 The first argument is the string to be converted; the second one
 represents the input and encodings.  If omitted, both are assumed

@@ -1,10 +1,10 @@
 NAME
-    Convert::EastAsianWidth - Convert between full- and half-width
+    Convert::EastAsianWidth - Convert between full/half-width ASCII
     characters
 
 VERSION
-    This document describes version 1.00 of Convert:EastAsianWidth, released
-    November 17, 2009.
+    This document describes version 1.01 of Convert:EastAsianWidth, released
+    November 18, 2009.
 
 SYNOPSIS
         # Exports to_fullwidth() and to_halfwidth() by default
@@ -16,8 +16,8 @@ SYNOPSIS
         my $y = to_halfwidth($b, 'big5');       # Same as above
 
 DESCRIPTION
-    This module efficiently convert between full- and half-width ASCII and
-    punctuation characters.
+    This module efficiently convert between full- and half-width ASCII
+    characters, including alphanumerics and punctuations.
 
     The first argument is the string to be converted; the second one
     represents the input and encodings. If omitted, both are assumed to be
