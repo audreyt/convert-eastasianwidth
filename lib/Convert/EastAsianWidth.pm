@@ -4,7 +4,7 @@ use 5.008;
 use strict;
 use Exporter;
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 our @ISA = 'Exporter';
 our @EXPORT = qw(to_fullwidth to_halfwidth);
 
@@ -19,7 +19,6 @@ sub to_fullwidth {
     else {
 	$text = $_[0];
     }
-
 
     $text =~ tr/ -~/\x{3000}\x{FF01}-\x{FF5E}/; 
 
@@ -55,7 +54,7 @@ Convert::EastAsianWidth - Convert between full/half-width ASCII characters
 =head1 VERSION
 
 This document describes version 1.01 of Convert:EastAsianWidth,
-released November 18, 2009.
+released November 7, 2010.
 
 =head1 SYNOPSIS
 
@@ -96,7 +95,7 @@ L<Encode>
 =head1 CC0 1.0 Universal
 
 To the extent possible under law, 唐鳳 has waived all copyright and related
-or neighboring rights to Module-Signature.
+or neighboring rights to Convert-EastAsianWidth.
 
 This work is published from Taiwan.
 

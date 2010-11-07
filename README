@@ -4,7 +4,7 @@ NAME
 
 VERSION
     This document describes version 1.01 of Convert:EastAsianWidth, released
-    November 18, 2009.
+    November 7, 2010.
 
 SYNOPSIS
         # Exports to_fullwidth() and to_halfwidth() by default
@@ -39,7 +39,7 @@ AUTHORS
 
 CC0 1.0 Universal
     To the extent possible under law, 唐鳳 has waived all copyright and
-    related or neighboring rights to Module-Signature.
+    related or neighboring rights to Convert-EastAsianWidth.
 
     This work is published from Taiwan.
 
